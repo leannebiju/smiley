@@ -1,20 +1,21 @@
-document.addEventListener("DOMContentLoaded", () => {
-    loadSVG("neutral.svg"); // Load neutral face initially
-});
+document.addEventListener("DOMContentLoaded", () => { loadSVG("neutral.svg");});
 
-let isSmiling = false; // Track state
+let isSmiling = false;
 
-function loadSVG(filename, callback) {
+function loadSVG(filename, callback) 
+{
     fetch(filename)
         .then(response => response.text())
-        .then(svgData => {
+        .then(svgData => 
+        {
             document.getElementById("svgContainer").innerHTML = svgData;
             if (callback) callback();
         })
         .catch(error => console.error("Error loading SVG:", error));
 }
 
-function animateSmile() {
+function animateSmile() 
+{
     let svg = document.querySelector("#svgContainer svg");
     let mouth = svg.querySelector("#Rectangle\\ 3");
 
@@ -27,12 +28,12 @@ function animateSmile() {
     let originalY = parseInt(mouth.getAttribute("y")) || 70;
 
     let steps = [
-        () => mouth.setAttribute("width", "30"), // Shrink mouth
+        () => mouth.setAttribute("width", "30"), 
         () => {
             mouth.setAttribute("width", "20");
-            mouth.setAttribute("x", originalX + 10); // Center shrink
+            mouth.setAttribute("x", originalX + 10);
         },
-        () => { // Add left pixel
+        () => { 
             let leftPixel = document.createElementNS("http://www.w3.org/2000/svg", "rect");
             leftPixel.setAttribute("width", "10");
             leftPixel.setAttribute("height", "10");
@@ -42,7 +43,7 @@ function animateSmile() {
             leftPixel.setAttribute("id", "leftCorner");
             svg.appendChild(leftPixel);
         },
-        () => { // Add right pixel
+        () => { 
             let rightPixel = document.createElementNS("http://www.w3.org/2000/svg", "rect");
             rightPixel.setAttribute("width", "10");
             rightPixel.setAttribute("height", "10");
@@ -52,7 +53,7 @@ function animateSmile() {
             rightPixel.setAttribute("id", "rightCorner");
             svg.appendChild(rightPixel);
         },
-        () => mouth.setAttribute("y", originalY + 5) // Move mouth down
+        () => mouth.setAttribute("y", originalY + 5) 
     ];
 
     let stepIndex = 0;
@@ -83,18 +84,18 @@ function animateNeutral() {
     let originalY = 70;
 
     let steps = [
-        () => mouth.setAttribute("y", originalY - 5), // Move mouth back up
+        () => mouth.setAttribute("y", originalY - 5), 
         () => {
             if (rightPixel) rightPixel.remove();
             if (leftPixel) leftPixel.remove();
         },
         () => {
             mouth.setAttribute("width", "20");
-            mouth.setAttribute("x", originalX + 10); // Keep centered while shrinking
+            mouth.setAttribute("x", originalX + 10); 
         },
         () => {
-            mouth.setAttribute("width", "40"); // Expand back correctly
-            mouth.setAttribute("x", originalX); // Reset exact position
+            mouth.setAttribute("width", "40"); 
+            mouth.setAttribute("x", originalX); 
         }
     ];
 
