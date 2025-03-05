@@ -1,1 +1,17 @@
 https://www.youtube.com/watch?v=GQuOcelrl-k&ab_channel=EireneKW
+
+
+neutral mouth svg 
+
+<svg width="40" height="10" viewBox="0 0 40 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect id="Rectangle 3" width="40" height="10" fill="black"/>
+</svg>
+
+
+smiley face svg
+
+<svg width="40" height="15" viewBox="0 0 40 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="10" height="10" fill="black"/>
+<rect x="30" width="10" height="10" fill="black"/>
+<rect x="10" y="5" width="20" height="10" fill="black"/>
+</svg>
