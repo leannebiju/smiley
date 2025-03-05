@@ -1,0 +1,25 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Plugin icon - 2">
+<rect width="128" height="128" fill="white"/>
+<g id="Vector">
+<path d="M40 10H80V20H40V10Z" fill="black"/>
+<path d="M40 100H80V110H40V100Z" fill="black"/>
+<path d="M80 20H90V30H80V20Z" fill="black"/>
+<path d="M30 20H40V30H30V20Z" fill="black"/>
+<path d="M30 90H40V100H30V90Z" fill="black"/>
+<path d="M80 90H90V100H80V90Z" fill="black"/>
+<path d="M90 30H100V40H90V30Z" fill="black"/>
+<path d="M20 30H30V40H20V30Z" fill="black"/>
+<path d="M20 80H30V90H20V80Z" fill="black"/>
+<path d="M90 80H100V90H90V80Z" fill="black"/>
+<path d="M100 40H110V80H100V40Z" fill="black"/>
+<path d="M10 40H20V80H10V40Z" fill="black"/>
+<path d="M80 20H40V30H30V40H20V80H30V90H40V100H80V90H90V80H100V40H90V30H80V20Z" fill="#FCEA49"/>
+</g>
+<rect id="Rectangle 1" x="40" y="40" width="10" height="10" fill="black"/>
+<rect id="Rectangle 6" x="40" y="70" width="10" height="10" fill="black"/>
+<rect id="Rectangle 2" x="70" y="40" width="10" height="10" fill="black"/>
+<rect id="Rectangle 5" x="70" y="70" width="10" height="10" fill="black"/>
+<rect id="Rectangle 4" x="50" y="75" width="20" height="10" fill="black"/>
+</g>
+</svg>
