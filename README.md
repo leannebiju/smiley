@@ -1,4 +1,4 @@
-# smiley
+# Smiley
 
-Creating a design in figma and use it in html css code.
-Here I am trying to create a simple smiley face that smiles when toggled. 
+Creating a simple pixelated design in figma and using it in HTML, CSS code.  
+Here I am trying to create a simple emoticon that smiles when toggled and goes back to neutral when toggled again. 
